@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="0.7230532493751457" y="0.9998752311897561" w="0.7491535384383096"/>
+<Windowdim w="1280" h="681"/>
+<Preferences minfontsize="12" minpointsize="3" minlinesize="1" arrowsize="10" selectionsize="8" monkeyspeed="20" gridopacity="20" digits.lengths="2" digits.edit="4" digits.angles="2" colorbackground="245,245,245" colorbackgroundx="139" colorbackgroundy="9" colorbackgroundPal="4" fig3D="false" figDP="false"/>
+<Objects>
+<Point name="P1" n="0" color="2" x="0" actx="0.0" y="0" acty="0.0" shape="circle" fixed="true">Point</Point>
+<Point name="P2" n="3" color="2" x="0" actx="0.0" y="1" acty="1.0" shape="circle" fixed="true">Point</Point>
+<Point name="P3" n="4" color="2" x="1" actx="1.0" y="0" acty="0.0" shape="circle" fixed="true">Point</Point>
+<Point name="P4" n="5" color="2" x="1" actx="1.0" y="1" acty="1.0" shape="circle" fixed="true">Point</Point>
+<Segment name="s1" n="8" color="1" from="P2" to="P4">Line segment from P2 to P4</Segment>
+<Segment name="s2" n="11" color="1" from="P4" to="P3">Line segment from P4 to P3</Segment>
+<Segment name="s3" n="14" color="1" from="P3" to="P1">Line segment from P3 to P1</Segment>
+<Segment name="s4" n="17" color="1" from="P1" to="P2">Line segment from P1 to P2</Segment>
+<Circle name="c1" n="192" color="2" hidden="super" bold="true" through="P1" midpoint="P2" acute="true">Circle around P2 through P1</Circle>
+<Circle name="c2" n="193" color="2" hidden="super" bold="true" through="P2" midpoint="P1" acute="true">Circle around P1 through P2</Circle>
+<Circle name="c3" n="407" color="2" hidden="super" bold="true" through="P4" midpoint="P2" acute="true">Circle around P2 through P4</Circle>
+<Circle name="c4" n="408" color="2" hidden="super" bold="true" through="P2" midpoint="P4" acute="true">Circle around P4 through P2</Circle>
+<Segment name="s5" n="610" color="1" from="P4" to="P1">Line segment from P4 to P1</Segment>
+<Segment name="s6" n="613" color="1" from="P3" to="P2">Line segment from P3 to P2</Segment>
+<Intersection name="P5" n="194" color="2" hidden="super" bold="true" first="c2" second="c1" shape="circle" which="second">Intersection between c2 and c1</Intersection>
+<Intersection name="P6" n="195" color="2" hidden="super" bold="true" first="c1" second="c2" shape="circle" which="second">Intersection between c1 and c2</Intersection>
+<Intersection name="P7" n="409" color="2" hidden="super" bold="true" first="c4" second="c3" shape="circle" which="second">Intersection between c4 and c3</Intersection>
+<Intersection name="P8" n="410" color="2" hidden="super" bold="true" first="c3" second="c4" shape="circle" which="second">Intersection between c3 and c4</Intersection>
+<PointOn name="P20" n="2235" color="2" hidden="super" on="s1" alpha="9.884663042646986" x="9.884663042646986" y="1.0" shape="circle">Point on s1</PointOn>
+<PointOn name="P24" n="2603" color="2" hidden="super" on="s1" alpha="9.884663042646986" x="9.884663042646986" y="1.0" shape="circle">Point on s1</PointOn>
+<PointOn name="P19" n="3019" color="2" hidden="super" on="s1" alpha="9.884663042646986" x="9.884663042646986" y="1.0" shape="circle">Point on s1</PointOn>
+<Line name="l1" n="196" color="3" from="P5" to="P6">Line through P5 and P6</Line>
+<Line name="l2" n="411" color="3" from="P7" to="P8">Line through P7 and P8</Line>
+<Intersection name="P9" n="412" color="2" first="l1" second="s2" shape="circle">Intersection between l1 and s2</Intersection>
+<Intersection name="P10" n="603" color="2" first="l2" second="l1" shape="circle">Intersection between l2 and l1</Intersection>
+<Intersection name="P12" n="614" color="2" first="l2" second="s1" shape="circle">Intersection between l2 and s1</Intersection>
+<Angle name="a1" n="604" color="1" hidden="super" showvalue="true" unit="°" first="P10" root="P4" filled="true" fixed="angle180(a(P10,P4,P9))/2">Angle P10 - P4 with size angle180(a(P10,P4,P9))/2</Angle>
+<Circle name="c5" n="605" color="4" hidden="super" through="P10" midpoint="P4" acute="true">Circle around P4 through P10</Circle>
+<Angle name="a2" n="785" color="1" hidden="super" showvalue="true" unit="°" first="P10" root="P4" filled="true" fixed="angle180(a(P10,P4,P12))/2">Angle P10 - P4 with size angle180(a(P10,P4,P12))/2</Angle>
+<Circle name="c6" n="786" color="4" hidden="super" through="P10" midpoint="P4" acute="true">Circle around P4 through P10</Circle>
+<Angle name="a3" n="919" color="1" hidden="super" showvalue="true" unit="°" first="P10" root="P2" filled="true" fixed="angle180(a(P10,P2,P12))/2">Angle P10 - P2 with size angle180(a(P10,P2,P12))/2</Angle>
+<Circle name="c7" n="920" color="4" hidden="super" through="P10" midpoint="P2" acute="true">Circle around P2 through P10</Circle>
+<Intersection name="P11" n="606" hidden="super" showname="true" first="a1" second="c5" shape="circle" which="first">Intersection between a1 and c5</Intersection>
+<Intersection name="P13" n="787" hidden="super" showname="true" first="a2" second="c6" shape="circle" which="first">Intersection between a2 and c6</Intersection>
+<Intersection name="P14" n="921" hidden="super" showname="true" first="a3" second="c7" shape="circle" which="first">Intersection between a3 and c7</Intersection>
+<Ray name="r1" n="607" color="3" from="P4" to="P11">Ray from P4 pointing to P11</Ray>
+<Ray name="r2" n="788" color="3" from="P4" to="P13">Ray from P4 pointing to P13</Ray>
+<Ray name="r3" n="922" color="3" from="P2" to="P14">Ray from P2 pointing to P14</Ray>
+<Intersection name="P15" n="1028" color="2" first="r3" second="l2" shape="circle">Intersection between r3 and l2</Intersection>
+<Angle name="a4" n="1029" color="1" hidden="super" showvalue="true" unit="°" first="P15" root="P2" filled="true" fixed="angle180(a(P15,P2,P12))/2">Angle P15 - P2 with size angle180(a(P15,P2,P12))/2</Angle>
+<Circle name="c8" n="1030" color="4" hidden="super" through="P15" midpoint="P2" acute="true">Circle around P2 through P15</Circle>
+<Parallel name="pl2" n="2612" color="3" point="P15" line="s5">Parallel line through P15 to s5</Parallel>
+<Intersection name="P16" n="1031" hidden="super" showname="true" first="a4" second="c8" shape="circle" which="first">Intersection between a4 and c8</Intersection>
+<Ray name="r4" n="1032" color="3" from="P2" to="P16">Ray from P2 pointing to P16</Ray>
+<Intersection name="P22" n="2601" color="2" first="r4" second="r2" shape="circle">Intersection between r4 and r2</Intersection>
+<Intersection name="P17" n="3017" color="2" first="pl2" second="r4" shape="circle">Intersection between pl2 and r4</Intersection>
+<Point name="P23" n="2602" color="2" hidden="super" x="x(P22)" actx="0.6755766511785419" y="y(P22)" acty="0.8656194489676547" shape="circle" fixed="true">Point</Point>
+<Point name="P18" n="3018" color="2" hidden="super" x="x(P17)" actx="0.5897902135516373" y="y(P17)" acty="0.8826834323650898" shape="circle" fixed="true">Point</Point>
+<Plumb name="p2" n="2604" color="3" hidden="super" point="P23" line="s1" valid="true">Perpendicular line through P23 to s1</Plumb>
+<Circle name="c10" n="2605" color="4" hidden="super" through="P23" midpoint="P24" acute="true">Circle around P24 through P23</Circle>
+<Plumb name="p3" n="3020" color="3" hidden="super" point="P18" line="s1" valid="true">Perpendicular line through P18 to s1</Plumb>
+<Circle name="c11" n="3021" color="4" hidden="super" through="P18" midpoint="P19" acute="true">Circle around P19 through P18</Circle>
+<Intersection name="P25" n="2606" color="2" first="p2" second="c10" awayfrom="P23" shape="circle" which="second">Intersection between p2 and c10</Intersection>
+<Intersection name="P21" n="3022" color="2" first="p3" second="c11" awayfrom="P18" shape="circle" which="second">Intersection between p3 and c11</Intersection>
+<Polygon name="Tsubasa" n="3024" color="1" type="thin" showname="true" background="true" solid="true" point1="P17" point2="P22" point3="P4" point4="P25" point5="P21">Polygon</Polygon>
+</Objects>
+</Construction>
+</CaR>
